@@ -22,7 +22,7 @@ if row_nuber > 0:
 
         doc = DocxTemplate("my_template.docx")
         doc.render(context)
-        doc.save('generated/generated nuber %s.docx'%conut)
+        doc.save('generated/%s %s .docx'%(conut,str(sheet.row(conut)[1]).replace("text:","").replace("'"," ")))
         del doc
         print(conut)
     #print(len(arrData))
